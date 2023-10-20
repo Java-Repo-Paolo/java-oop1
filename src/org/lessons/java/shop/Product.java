@@ -60,6 +60,7 @@ public class Product {
         this.price = price * (1 + (double) this.iva / 100);
         return price;
     }
+    //Nome + Codice
     public String nameCode(){
         return name + ' ' + getCode();
     }
