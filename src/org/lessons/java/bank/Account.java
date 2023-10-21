@@ -11,7 +11,7 @@ public class Account {
     //Costruttori
     public Account(String name, double balance){
         Random random = new Random();
-        this.account = random.nextInt(100000);
+        this.account = random.nextInt(1000);
         this.name = name;
         this.balance = balance;
     }
@@ -30,19 +30,15 @@ public class Account {
         this.name = name;
     }
     //Saldo
+
     public double getBalance() {
-        balance = 0.0;
         return balance;
     }
-    //Metodi per Aumentare o Diminuire il conto
+    //Metodi per Aumentare - Diminuire il conto
     public void increaseBalance(double amount){
         balance += amount;
     }
     public void diminishBalance(double amount){
-        if (amount <= balance) {
-            balance -= amount;
-        } else {
-            System.out.println("Insufficient funds.");
-        }
+        balance -= amount;
     }
 }

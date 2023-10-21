@@ -33,6 +33,7 @@ public class Main {
                             '\n' + "Name/Code: " + productThree.priceIva() + " €"
         );
 
+        scanner.close();
 
     }
 
