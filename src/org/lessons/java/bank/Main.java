@@ -64,7 +64,6 @@ public class Main {
                             "\n"
                         );
                     }
-
                     break;
                 case 3:
                     quit = true;  // Esci dal ciclo

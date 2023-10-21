@@ -3,6 +3,7 @@ package org.lessons.java.bank;
 import java.util.Random;
 
 public class Account {
+
     //Attributi
     private int account;
     private String name;
@@ -30,7 +31,6 @@ public class Account {
         this.name = name;
     }
     //Saldo
-
     public double getBalance() {
         return balance;
     }
