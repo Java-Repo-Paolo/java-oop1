@@ -9,11 +9,11 @@ public class Main {
         System.out.println("Write your account name: ");
         String choiceAccount = scanner.nextLine();
 
-        Account accountOne = new Account(choiceAccount, 0.0);
+        Account accountOne = new Account("Paolo", 0.0);
 
         boolean quit = false;
         while(!quit){
-            System.out.println("Welcome " + choiceAccount + "\n" + "Code account: " + accountOne.getAccount());
+            System.out.println("Welcome " + accountOne.getName() + "\n" + "Code account: " + accountOne.getAccount());
             //System.out.println("Your current balance is: " + accountOne.getBalance());
             System.out.println("Choose an option: ");
             System.out.println("1 - Pay a sum");
